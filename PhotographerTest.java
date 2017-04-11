@@ -24,12 +24,20 @@ public class PhotographerTest {
     assertEquals(1, photographer.printablesLength());
   }
 
-  @Test public void removeCameraFromPrintables(){
+  @Test
+  public void removeCameraFromPrintables(){
     photographer.addCamera(digitalCamera);
     photographer.addCamera(analogueCamera);
     photographer.removeCamera(digitalCamera);
     assertEquals(1, photographer.printablesLength());
   }
+
+  @Test
+  public void addPhotosToJournal(){
+    photographer.addToJournal("Tuesday", 6);
+    assertEquals(photographer.journa)
+  }
+
 
 
 }

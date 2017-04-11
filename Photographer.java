@@ -4,10 +4,12 @@
 
     private String name;
     private ArrayList<Printable> printables;
+    private HashMap<String, Integer> journal;
 
     public Photographer(String name){
       this.name = name;
       this.printables = new ArrayList<Printable>();
+      this.journal = new HashMap<String, Integer>();
     }
 
     public String getName() {
@@ -24,6 +26,11 @@
 
     public void removeCamera(Printable printable){
       this.printables.remove(printables.indexOf(printable));
+    }
+
+    public void addToJournal(String day, Integer numberOfPhotos){
+      this.journal.put(day, numberOfPhotos);
+      
     }
 
     public ArrayList<String> printAllDetails(){
