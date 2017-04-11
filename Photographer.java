@@ -14,6 +14,10 @@ public class Photographer {
     return this.name;
   }
 
+  public int printablesLength(){
+    return this.printables.size();
+  }
+
   public void addCamera(Printable printable){
     this.printables.add(printable);
   }
