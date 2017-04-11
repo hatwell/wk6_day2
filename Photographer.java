@@ -3,19 +3,23 @@ import java.util.*;
 public class Photographer {
 
   private String name;
-  private ArrayList<Camera> cameras;
+  private ArrayList<Printable> printables;
 
   public Photographer(String name){
     this.name = name;
-    this.cameras = new ArrayList<Camera>();
+    this.printables = new ArrayList<Printable>();
   }
 
   public String getName() {
     return this.name;
   }
 
-  public void addCamera(Camera camera){
-    this.cameras.add(camera);
+  public void addCamera(Printable printable){
+    this.printables.add(printable);
+  }
+
+  public void removeCamera(Printable printable){
+    this.printables.remove(printables.indexOf(printable));
   }
 
 }

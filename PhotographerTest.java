@@ -8,9 +8,14 @@ public class PhotographerTest {
 
   @Before
   public void before() {
-    photographer = new Photographer();
+    photographer = new Photographer("Susan");
     digitalCamera = new DigitalCamera();
     analogueCamera = new AnalogueCamera();
+  }
+
+  @Test
+  public void photographerHasName(){
+    assertEquals("Susan", photographer.getName());  
   }
 
 
