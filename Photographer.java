@@ -29,7 +29,7 @@
     public ArrayList<String> printAllDetails(){
       ArrayList<String> cameraDetails = new ArrayList<String>();
       for (Printable printable : this.printables) {
-        cameraDetails.put(printable);
+        cameraDetails.add(printable.printDetails());
       }
       return cameraDetails;
     }
