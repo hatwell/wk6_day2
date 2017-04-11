@@ -4,7 +4,7 @@
 
     private String name;
     private ArrayList<Printable> printables;
-    private HashMap<String, Integer> journal;
+    public HashMap<String, Integer> journal;
 
     public Photographer(String name){
       this.name = name;
@@ -30,7 +30,6 @@
 
     public void addToJournal(String day, Integer numberOfPhotos){
       this.journal.put(day, numberOfPhotos);
-      
     }
 
     public ArrayList<String> printAllDetails(){
