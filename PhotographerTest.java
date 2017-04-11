@@ -2,8 +2,17 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 public class PhotographerTest {
-  Photographer photographer = new Photographer();
-  DigitalCamera digitalCamera = new DigitalCamera();
-  AnalogueCamera analogueCamera = new AnalogueCamera();
+  Photographer photographer;
+  DigitalCamera digitalCamera;
+  AnalogueCamera analogueCamera;
+
+  @Before
+  public void before() {
+    photographer = new Photographer();
+    digitalCamera = new DigitalCamera();
+    analogueCamera = new AnalogueCamera();
+  }
+
+
 
 }
