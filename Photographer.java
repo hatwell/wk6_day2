@@ -26,4 +26,11 @@
       this.printables.remove(printables.indexOf(printable));
     }
 
+    public ArrayList<String> printAllDetails(){
+      ArrayList<String> cameraDetails = new ArrayList<String>();
+      for (Printable printable : this.printables) {
+        cameraDetails.put(printable);
+      }
+      return cameraDetails;
+    }
   }
