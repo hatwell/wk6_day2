@@ -35,6 +35,6 @@ public class PhotographerTest {
   @Test
   public void addPhotosToJournal(){
     photographer.addToJournal("Tuesday", 6);
-    assertEquals(photographer.journal.keySet[0], "Tuesday");
+    assertEquals(photographer.journal.keys[0], "Tuesday");
   }
 }
